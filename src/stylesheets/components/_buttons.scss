@@ -1,0 +1,29 @@
+@import "../themes/theme";
+.BtnCustoms {
+ margin: 50px;
+ padding: 15px 20px 15px 20px;
+ background-color: $beta-color;
+ border: solid $second-color 1px;
+ color: $base-clolor;
+ border-radius: 20px;
+ font-family: 'Rowdies', cursive;
+ transition: transform 330ms ease-in-out;
+}
+.BtnCustoms:hover {
+ transform: scale(1.2);
+}
+
+@keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 #CBFC01}}.BtnCustoms2 {
+ margin: 50px;
+ padding: 15px 20px 15px 20px;
+ background-color: $beta-color;
+ border: solid $second-color 1px;
+ color: $base-clolor;
+ border-radius: 20px;
+ font-family: 'Rowdies', cursive;
+ transition: transform 330ms ease-in-out;
+}
+.BtnCustoms2:hover {
+ animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both
+}
+

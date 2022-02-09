@@ -1,0 +1,50 @@
+@import "../themes/theme";
+
+.NavBar {
+  background-color: $base-clolor;
+  color: $second-color;
+}
+.NavBarLogo{
+  width: 100px;
+  height: 100px;
+}
+.NavContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavBarM {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 100px;
+  li {
+    z-index: 5;
+    list-style-type: none;
+    margin: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  li:hover {
+    color: $beta-color;
+  }
+}
+#home {
+  color: $beta-color;
+}
+.NavBarR{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  li{
+    z-index: 5;
+    list-style-type: none;
+    margin: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  li:hover {
+    color: $beta-color;
+  }
+}

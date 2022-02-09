@@ -1,0 +1,21 @@
+$base-clolor: #151515;
+$second-color: #D7D7D7;
+$beta-color: #CBFC01;
+//Font
+//font-family: 'Noto Sans TC', sans-serif;
+//font-family: 'Oswald', sans-serif;
+//font-family: 'Rowdies', cursive;
+body {
+  background-color: $base-clolor;
+}
+h1 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 80px;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+p {
+  font-family: 'Oswald', sans-serif;
+}

@@ -1,0 +1,108 @@
+@import "../themes/theme";
+
+.card1 {
+  margin: 50px;
+  width: 300px;
+  height: 225px;
+  background: black;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px $second-color;
+}
+
+.card1 img {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  height: 50px;
+  padding: 0.4em 1.5em;
+  font-size: 14px;
+  background: rgb(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  transform: scale(0.9);
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+  overflow: hidden;
+  transition: all .4s;
+}
+
+.contnet p {
+  font-size: 0.8em;
+
+}
+.card1:hover .content {
+  height: 150px;
+}
+
+//card2
+.card2 {
+  background-color: $second-color;
+  margin: 50px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.card2 h2 {
+  margin-bottom: 10px;
+}
+
+.card2 p {
+  margin-bottom: 10px;
+}
+
+.card2::before{
+  content: "0";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #4B5E00, #9DC400, #BCEB00, #BCEB00, #CBFC01, #E1FC01);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 100px;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.card2::after {
+  content: "1";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #E1FC01, #CBFC01, #BCEB00, #BCEB00, #9DC400, #4B5E00);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 100px;
+  display: flex;
+  color: white;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.card2:hover::before {
+  transform: translateX(-100%);
+}
+
+.card2:hover::after {
+  transform: translateX(100%);
+}
+
+
